@@ -1,4 +1,4 @@
-# Verify connection
+### Verify connection
 To verify the connection let's type in ubuntu:
 
 Install cifs tools to mount:
@@ -19,10 +19,26 @@ sudo mount -t cifs -o username=,password=,dir_mode=0777,file_mode=0777 //[IP_add
 ```
 Example:
 ```bash
-sudo mount -t cifs -o username=,password=,dir_mode=0777,file_mode=0777 //192.168.2.244/Testing /home/asus/Desktop/Test
+sudo mount -t cifs -o username=,password=,dir_mode=0777,file_mode=0777 //192.168.2.237/Testing /home/asus/Desktop/Test
 ```
+Check if the folder is working and sharing files between windows and ubuntu , if all works fine umount it.
 Then umount the shared folder to avoid problems.
 ```bash
 sudo umount /home/asus/Desktop/Testing 
 ```
-Finally check if the shared folder is working, trying to sharing files.
+### Test ping
+Check if there is connection between then:
+**Windows Client**
+Open cmd and then type:
+```bash
+ping [IP of ubuntu]
+```
+**Ubuntu Server**
+Open the terminal and type:
+```bash
+ping [IP of windows]
+```
+### Read the errors from the rostopic
+For example:
+![Capture](https://user-images.githubusercontent.com/59718261/89586680-c8970d00-d805-11ea-96fe-e9953742bbca.PNG)
+If this errors appears try to verify if your ip address is correct.
