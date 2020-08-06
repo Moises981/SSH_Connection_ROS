@@ -69,6 +69,9 @@ Example:
 
  ### Problems
  If there are problems try to [verify the connection](Verify.md).
+ 
+ ### Results
+ [Click here to see the result](Result.md)
 
 
 
