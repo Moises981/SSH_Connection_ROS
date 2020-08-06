@@ -33,4 +33,7 @@ For example:
 
 If this errors appears try to verify if you have created the folder in ubuntu.
 
+![Capture](https://user-images.githubusercontent.com/59718261/89589051-80c6b480-d80a-11ea-869d-b489a8061df8.PNG)
+
+This is a warn that said that you haven't connect to the server from the application (Testing.exe) yet.
 
