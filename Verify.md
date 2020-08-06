@@ -40,7 +40,9 @@ ping [IP of windows]
 ```
 ### Read the errors from the rostopic
 For example:
+
 ![Capture](https://user-images.githubusercontent.com/59718261/89586680-c8970d00-d805-11ea-96fe-e9953742bbca.PNG)
+
 If this errors appears try to verify if you have created the folder in ubuntu.
 
 
