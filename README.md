@@ -54,20 +54,6 @@ Example:
 
  ### Problems
  If there are problems try to [verify the connection](Verify.md).
- 
-
-
-
-
-
-
-
-
-
- 
- ### Problems
- If there are problems try to [verify the connection](Verify.md).
- 
 
 
 
