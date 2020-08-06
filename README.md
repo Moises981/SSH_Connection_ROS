@@ -1,7 +1,3 @@
-# Send rostopic messages from windows to ubuntu with SSH client
- 
- [Create the shared folder](Shared_folder.md) in windows:
- 
  # Send rostopic messages from windows to ubuntu with SSH client
  
  [Create the shared folder](Shared_folder.md) in windows:
