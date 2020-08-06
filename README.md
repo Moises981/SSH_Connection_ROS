@@ -31,6 +31,38 @@ Copy the configuration.
 
 ![Capture](https://user-images.githubusercontent.com/59718261/89475804-9bd3ee80-d74e-11ea-8958-442acb7a7b4a.PNG)
 
+Open in windows start "View network computers and devices" , next copy click on your computer name and verify if your shared folder is there.
+
+![Capture](https://user-images.githubusercontent.com/59718261/89476310-fd488d00-d74f-11ea-9cf9-5b27a97a97b7.PNG)
+
+To verify the connection let's type in ubuntu:
+
+Install cifs tools to mount:
+```bash
+sudo apt-get install cifs-utils
+```
+Install ssh-server to connect:
+```bash
+sudo apt-get install openssh-server
+```
+If there are problems try to install samba:
+```bash
+sudo apt-get install samba
+```
+Create a folder in ubuntu to mount the shared folder of windows.
+```bash
+sudo mount -t cifs -o username=,password=,dir_mode=0777,file_mode=0777 //[IP_address]/[Name of the shared folder] [Path of the folder in ubuntu]
+```
+Example:
+```bash
+sudo mount -t cifs -o username=,password=,dir_mode=0777,file_mode=0777 //192.168.2.244/Testing /home/asus/Desktop/Test
+```
+Then umount the shared folder to avoid problems.
+```bash
+sudo umount /home/asus/Desktop/Testing 
+```
+
+
 
 
 
