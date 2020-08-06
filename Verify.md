@@ -1,4 +1,4 @@
-# Optional (If there are problems try this):
+# Verify connection
 To verify the connection let's type in ubuntu:
 
 Install cifs tools to mount:
