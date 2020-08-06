@@ -24,7 +24,8 @@ class Server(object):
         self.Shared_Folder_path = ''
         self.Path_ubuntu = '/home/asus/Desktop/Test'
         self.IP_FOUND = False
-        self.CP_files = subprocess.Popen('echo', stdout=subprocess.PIPE,stderr=subprocess.PIPE) #It doesnt do nothing
+        self.CP_Folder = '/home/asus/Desktop/Catkin_ws/src/server_node/Backup'
+        self.CP_files = subprocess.Popen('echo', stdout=subprocess.PIPE,stderr=subprocess.PIPE) #It doesnt do nothing in the init
 
     def callback(self , msg):
         self.state = msg.data
@@ -80,7 +81,7 @@ class Server(object):
                 self.Reconnection()
             if self.IP_FOUND:       #Si se encuentra enviara directamente los archivos
                 if self.state == 5:
-                    self.CP_files = subprocess.Popen(['cp','-r','/home/asus/Desktop/Catkin_ws/src/server_node/Backup/',self.Path_ubuntu+'/'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+                    self.CP_files = subprocess.Popen(['cp','-r',self.CP_Folder+'/',self.Path_ubuntu+'/'], stdout=subprocess.PIPE,stderr=subprocess.PIPE)
                     rospy.loginfo('Done')
 
         print self.state
