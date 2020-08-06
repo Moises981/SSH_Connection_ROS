@@ -2,6 +2,21 @@
  
  [Create the shared folder](Shared_folder.md) in windows:
  
+ ### Install 
+ 
+ Install cifs tools to mount:
+```bash
+sudo apt-get install cifs-utils
+```
+Install ssh-server to connect:
+```bash
+sudo apt-get install openssh-server
+```
+If there are problems try to install samba:
+```bash
+sudo apt-get install samba
+```
+ 
  ### Compile the packages (Server folder) in ROS
  ```bash
  catkin_make
