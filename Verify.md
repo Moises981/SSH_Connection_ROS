@@ -42,3 +42,5 @@ ping [IP of windows]
 For example:
 ![Capture](https://user-images.githubusercontent.com/59718261/89586680-c8970d00-d805-11ea-96fe-e9953742bbca.PNG)
 If this errors appears try to verify if your ip address is correct.
+
+
