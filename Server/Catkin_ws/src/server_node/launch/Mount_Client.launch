@@ -1,4 +1,6 @@
 <launch>
-    <arg name="ip_address"/>
-    <node pkg="server_node" name="CP_FILES" type="Connection.py" output="screen" args="$(arg ip_address)"/>
+    <arg name="shared_folder"/>
+    <arg name="folder"/>
+    <arg name="sudo_password"/>
+    <node pkg="server_node" name="CP_FILES" type="Connection.py" output="screen" args="$(arg shared_folder) $(arg folder) $(arg sudo_password)"/>
 </launch>

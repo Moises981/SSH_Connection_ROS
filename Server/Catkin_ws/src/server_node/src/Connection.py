@@ -18,13 +18,13 @@ class Server(object):
         self.SetState = 0
         
         #Argumento de la contrasena de ubuntu para sudo
-        self.sudoPassword = 'Playtec981'
+        self.sudoPassword = sys.argv[3]
         #Comando para montar servidor en la carpeta con sudo
         # sudo mount -t cifs -o username=Playtec,password=,dir_mode=0777,file_mode=0777 //172.16.204.128/ros /home/asus/Desktop/Test'
         self.Shared_Folder_path = ''
-        self.Path_ubuntu = '/home/asus/Desktop/Test'
+        self.Path_ubuntu = sys.argv[1]
         self.IP_FOUND = False
-        self.CP_Folder = '/home/asus/Desktop/Catkin_ws/src/server_node/Backup'
+        self.CP_Folder = sys.argv[2]
         self.CP_files = subprocess.Popen('echo', stdout=subprocess.PIPE,stderr=subprocess.PIPE) #It doesnt do nothing in the init
 
     def callback(self , msg):
