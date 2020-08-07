@@ -67,11 +67,16 @@ Example:
 
 ![Menu](https://user-images.githubusercontent.com/59718261/89586695-ce8cee00-d805-11ea-8413-294636d74fc2.PNG)
 
+## Nodes
+
+![SSH_Client](https://user-images.githubusercontent.com/59718261/89696486-af618f80-d8dd-11ea-96a0-0e2a46b53f77.jpeg)
+
  ### Problems
  If there are problems try to [verify the connection](Verify.md).
  
  ### Results
  [Click here to see the result](Result.md)
+ 
 
 
 
