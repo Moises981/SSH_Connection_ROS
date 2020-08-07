@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "v/H1vSbQEKwSqUsVyq0Sn1mtMeSdcBmsjLiXQ7mojUkUSuaoE9sEmrJe8mcdLKaonGRSzUtWkX6bdo4619JuWg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\source\\repos\\Test\\Test\\Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\yamldotnet\\8.1.2\\yamldotnet.8.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
